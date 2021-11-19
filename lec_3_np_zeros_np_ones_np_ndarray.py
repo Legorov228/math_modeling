@@ -11,3 +11,7 @@ print(b)
 
 d = np.ndarray((3, 3))
 print(d)
+
+print(type(a))
+print(type(b))
+print(type(d))

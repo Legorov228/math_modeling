@@ -12,3 +12,4 @@ print(slice)
 
 b = np.array([a, np.array(a)*3])
 print(b)
+
