@@ -1,4 +1,6 @@
 def ar_func(a, x, b):
-  
-  print(y)
-ar_func(5, 6, 7)
+  a < x < b
+  y = x ** 2
+  return y
+
+print(ar_func(3, 4, 5))
