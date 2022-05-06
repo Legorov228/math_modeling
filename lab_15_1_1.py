@@ -8,11 +8,11 @@ ax = plt3d.Axes3D(fig)
 N = 100
 alpha = np.linspace(0, 10, N)
 
-theta = np.linspace(0,10,N)
+φ = np.linspace(0,10,N)
 
-x = R * np.outer(np.sin(theta), np.cos(alpha))
-y = R * np.outer(np.sin(theta), np.sin(alpha))
-z = R * np.outer(np.ones(np.size(phi))
+x = np.outer(φ, np.cos(alpha))
+y = np.outer(φ, np.sin(alpha))
+z = np.outer(np.ones(np.size(φ)), alpha ** 2)
 
 ax.plot_surface(x, y, z)
 plt.show()
