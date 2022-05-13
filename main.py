@@ -81,10 +81,10 @@ v_x50 = 0
 y50 = 0
 v_y50 = 20122
 
-x60 = 351 * 10**9
-v_x60 = 76000
+x60 = 400 * 10**9
+v_x60 = -34000
 y60 = 0
-v_y60 = 5000
+v_y60 = 15000
 
 s0 = (x10, v_x10, y10, v_y10,
       x20, v_x20, y20, v_y20,
@@ -140,7 +140,7 @@ ball_line4, = plt.plot([], [], '-', color='r')
 ball5, = plt.plot([], [], 'o', color='silver')
 ball_line5, = plt.plot([], [], '-', color='silver')
 
-ball6, = plt.plot([], [], 'o', color='gold')
+ball6, = plt.plot([], [], 'o', color='gold', ms=20)
 ball_line6, = plt.plot([], [], '-', color='gold')
 
 plt.plot([0], [0], 'o', color='y', ms=15)
@@ -167,10 +167,10 @@ def animate(i):
 ani = FuncAnimation(fig,
                    animate,
                    frames=frames,
-                   interval=100)
+                   interval=30)
 
 plt.axis('equal')
-edge = 5 * x10
+edge = 10 * x10
 ax.set_xlim(-edge, edge)
 ax.set_ylim(-edge, edge)
 
